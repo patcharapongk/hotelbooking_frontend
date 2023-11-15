@@ -13,7 +13,7 @@ const HotelCard = () => {
       />
       <div className="flex flex-row justify-between items-center">
         <div>
-          <h1 className="font-serif text-lg"> S31 Sukhumvit Bangkok </h1>
+          <h1 className="font-inder text-lg"> S31 Sukhumvit Bangkok </h1>
           <h2> ⭐️⭐️⭐️⭐️⭐️ </h2>
         </div>
         <div className="flex flex-col items-end bg-slate-100 p-1 rounded-xl">
