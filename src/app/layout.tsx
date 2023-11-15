@@ -12,7 +12,7 @@ const inter = Inter({
   weight: ["400", "700"],
 });
 const inder = Inder({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   display: "swap",
   variable: "--font-inder",
   weight: "400",
@@ -31,10 +31,9 @@ export default async function RootLayout({
   const session = await getServerSession(authOptions);
   return (
     <html lang="en">
-      <body className={`${inder.variable} font-sans`}>
+      <body className={`${inder.variable} ${inter.variable} font-sans`}>
         <NextAuthProvider session={session}>{children}</NextAuthProvider>
       </body>
-      ;
     </html>
   );
 }

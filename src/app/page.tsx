@@ -1,11 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
+import HotelCard from "@/components/HotelCard/HotelCard";
 
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-2xl text-center font-bold"> Hi </h1>
-      <Link href="api/auth/signin">SignIn</Link>
+    <main className="bg-slate-100 flex flex-col justify-center items-center w-screen h-screen">
+      <HotelCard />
     </main>
   );
 }
